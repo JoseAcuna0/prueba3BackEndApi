@@ -76,7 +76,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
     options.Password.RequireDigit = true;
     options.Password.RequireLowercase = true;
-    options.Password.RequireUppercase = true;
+    options.Password.RequireUppercase = false;
     options.Password.RequireNonAlphanumeric = false; // Permitir contraseñas sin caracteres especiales
     options.Password.RequiredLength = 6; // Mínimo de 6 caracteres
 })
@@ -87,8 +87,9 @@ var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
+    var services = scope.ServiceProvider;
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDBContext>();
-    dbContext.Database.Migrate();
+    await dbContext.Database.MigrateAsync();
 }
 
 // Configure the HTTP request pipeline.

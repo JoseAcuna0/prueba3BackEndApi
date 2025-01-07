@@ -22,9 +22,19 @@ namespace ApiPrueba3.src.Repository
 
          public async Task<bool> RegisterAsync(RegisterUserDTO registerUser)
         {
-            var user = new IdentityUser { UserName = registerUser.email, Email = registerUser.email };
-            var result = await _userManager.CreateAsync(user, registerUser.password);
+            var userExists = await _userManager.FindByEmailAsync(registerUser.email);
+            if (userExists != null)
+            {
+                return false; // El correo ya existe
+            }
 
+            var user = new IdentityUser
+            {
+                UserName = registerUser.email,
+                Email = registerUser.email
+            };
+
+            var result = await _userManager.CreateAsync(user, registerUser.password);
             return result.Succeeded;
         }
 
