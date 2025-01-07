@@ -4,31 +4,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using ApiPrueba3.src.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace ApiPrueba3.src.Data
 {
-    public class ApplicationDBContext : DbContext
+    public class ApplicationDBContext : IdentityDbContext<IdentityUser>
     {
-        // Constructor válido
-        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
-        {
-        }
+        public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options) { }
 
-        // DbSets para las entidades
-        public DbSet<User> Users { get; set; } = null!;
         public DbSet<Post> Posts { get; set; } = null!;
 
-        // Configuración adicional de las relaciones
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
+            // Configuración de relaciones
             modelBuilder.Entity<Post>()
                 .HasOne(p => p.User)
-                .WithMany(u => u.Posts)
+                .WithMany()
                 .HasForeignKey(p => p.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
         }
-
     }
 }

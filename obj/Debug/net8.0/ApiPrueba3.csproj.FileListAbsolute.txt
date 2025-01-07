@@ -129,3 +129,17 @@ D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\obj\Debug\net8.0\refint\A
 D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\obj\Debug\net8.0\ApiPrueba3.pdb
 D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\obj\Debug\net8.0\ApiPrueba3.genruntimeconfig.cache
 D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\obj\Debug\net8.0\ref\ApiPrueba3.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Proyectos\DWM\Prueba3IDWM\Prueba3BackEnd\ApiPrueba3\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
